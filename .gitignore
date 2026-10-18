@@ -45,7 +45,8 @@ next-env.d.ts
 .claude/
 .playwright-cli/
 .tasks/
-.screenshot*.png
-.skills-lock.json
+screenshot*.png
+skills-lock.json
 AGENTS.md
 SPEC.md
+tasks/
