@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #1e293b;
+  --surface: #f8fafc;
+  --surface-card: #ffffff;
+  --border: #e2e8f0;
+  --border-subtle: #f1f5f9;
+  --pcrn-red: #9e1b28;
+  --pcrn-red-dark: #7f121d;
+  --pcrn-red-light: #fef2f2;
+  --pcrn-red-border: #fecdd3;
+  --pcrn-charcoal: #1e293b;
+  --pcrn-charcoal-muted: #475569;
+}
+
+.dark {
+  --background: #090d16;
+  --foreground: #f1f5f9;
+  --surface: #0f172a;
+  --surface-card: #131d2e;
+  --border: #1e293b;
+  --border-subtle: #1e293b80;
+  --pcrn-red: #e04b57;
+  --pcrn-red-dark: #c93a47;
+  --pcrn-red-light: rgba(224, 75, 87, 0.18);
+  --pcrn-red-border: rgba(224, 75, 87, 0.3);
+  --pcrn-charcoal: #f1f5f9;
+  --pcrn-charcoal-muted: #94a3b8;
+}
+
+@theme {
+  --color-pcrn-red: #9e1b28;
+  --color-pcrn-red-dark: #7f121d;
+  --color-pcrn-red-light: #fef2f2;
+  --color-pcrn-red-border: #fecdd3;
+  --color-charcoal: #1e293b;
+  --color-charcoal-muted: #475569;
+  --color-surface: #f8fafc;
+  --color-border-subtle: #e2e8f0;
+  
+  /* Typography Scale */
+  --font-size-body-sm: 0.875rem;    /* 14px */
+  --font-size-body: 1rem;           /* 16px */
+  --font-size-body-lg: 1.125rem;    /* 18px */
+  --font-size-display-sm: 1.875rem;  /* 30px */
+  --font-size-display: 2.25rem;     /* 36px */
+  --font-size-display-lg: 3rem;     /* 48px */
+  --font-size-display-xl: 3.75rem;  /* 60px */
+  
+  /* Line Heights */
+  --line-height-body: 1.6;
+  --line-height-heading: 1.2;
+  --line-height-tight: 1.1;
+}
+
+body {
+  background-color: #ffffff;
+  color: #1e293b;
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+html.dark body {
+  background-color: #090d16;
+  color: #f1f5f9;
+}
+
+/* Clean print and focus styles */
+:focus-visible {
+  outline: 2px solid #9e1b28;
+  outline-offset: 2px;
+}
+
+.dark :focus-visible {
+  outline: 2px solid #e04b57;
+}
+
+/* Typography utility classes */
+.text-body-sm { font-size: var(--font-size-body-sm); line-height: var(--line-height-body); }
+.text-body { font-size: var(--font-size-body); line-height: var(--line-height-body); }
+.text-body-lg { font-size: var(--font-size-body-lg); line-height: var(--line-height-body); }
+.text-display-sm { font-size: var(--font-size-display-sm); line-height: var(--line-height-heading); font-weight: 700; }
+.text-display { font-size: var(--font-size-display); line-height: var(--line-height-heading); font-weight: 700; }
+.text-display-lg { font-size: var(--font-size-display-lg); line-height: var(--line-height-heading); font-weight: 700; }
+.text-display-xl { font-size: var(--font-size-display-xl); line-height: var(--line-height-tight); font-weight: 800; }
+
+/* Ensure minimum 14px for all body content */
+p, li, span, a, td, th, dt, dd, blockquote, figcaption, address {
+  font-size: max(var(--font-size-body-sm), 0.875rem);
+}
