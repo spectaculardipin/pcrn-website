@@ -57,7 +57,7 @@ export default function Footer() {
               <div className="flex items-center gap-3">
                 <div className="relative w-12 h-12 bg-white rounded-lg p-1 shrink-0">
                   <Image
-                    src="/images/pcrn-logo.png"
+                    src="images/pcrn-logo.png"
                     alt="PCRN Logo"
                     fill
                     sizes="48px"

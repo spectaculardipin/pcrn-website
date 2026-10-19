@@ -102,7 +102,7 @@ export default function FocusAreasPage() {
             <div className="lg:col-span-6">
               <div className="relative rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800 aspect-16/10">
                 <Image
-                  src="/images/policy-advocacy.jpg"
+                  src="images/policy-advocacy.jpg"
                   alt="PCRN legal policy round table in Kathmandu"
                   fill
                   className="object-cover"
@@ -167,7 +167,7 @@ export default function FocusAreasPage() {
             <div className="lg:col-span-6 lg:order-1">
               <div className="relative rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800 aspect-16/10">
                 <Image
-                  src="/images/community-workshop.jpg"
+                  src="images/community-workshop.jpg"
                   alt="Community health education and patient rights workshop in Nepal"
                   fill
                   className="object-cover"
@@ -232,7 +232,7 @@ export default function FocusAreasPage() {
             <div className="lg:col-span-6">
               <div className="relative rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800 aspect-16/10">
                 <Image
-                  src="/images/hero-patient-care.jpg"
+                  src="images/hero-patient-care.jpg"
                   alt="Doctor and nurse in hospital consultation setting in Kathmandu"
                   fill
                   className="object-cover"

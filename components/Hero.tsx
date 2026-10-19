@@ -83,7 +83,7 @@ export default function Hero() {
             <div className="relative rounded-2xl overflow-hidden shadow-xl border-4 border-white dark:border-slate-800 bg-slate-100 dark:bg-slate-900 group">
               <div className="relative aspect-4/3 w-full">
                 <Image
-                  src="/images/hero-patient-care.jpg"
+                  src="images/hero-patient-care.jpg"
                   alt="Doctor and nurse in Nepal compassionately explaining medical treatment to a patient and family"
                   fill
                   sizes="(max-width: 768px) 100vw, 45vw"

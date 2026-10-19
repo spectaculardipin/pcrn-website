@@ -446,7 +446,7 @@ export default function GetInvolvedPage() {
                   </div>
                   <div className="relative aspect-square w-48 max-w-full mx-auto rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700 bg-white p-1">
                     <Image
-                      src="/images/esewa-qr.png"
+                      src="images/esewa-qr.png"
                       alt="PCRN eSewa Donation QR Code"
                       fill
                       sizes="192px"
@@ -465,7 +465,7 @@ export default function GetInvolvedPage() {
                   </div>
                   <div className="relative aspect-square w-48 max-w-full mx-auto rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700 bg-white p-1">
                     <Image
-                      src="/images/khalti-qr.png"
+                      src="images/khalti-qr.png"
                       alt="PCRN Khalti Donation QR Code"
                       fill
                       sizes="192px"

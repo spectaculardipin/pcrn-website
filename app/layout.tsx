@@ -35,11 +35,11 @@ export const metadata: Metadata = {
   publisher: "Patients Rights Concern Nepal",
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: "/images/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/images/pcrn-logo.png", sizes: "256x256", type: "image/png" },
+      { url: "favicon.ico" },
+      { url: "images/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "images/pcrn-logo.png", sizes: "256x256", type: "image/png" },
     ],
-    apple: [{ url: "/images/pcrn-logo.png" }],
+    apple: [{ url: "images/pcrn-logo.png" }],
   },
   openGraph: {
     type: "website",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
       "Advancing constitutional rights to health, voluntary informed consent, itemized hospital billing, and accessible grievance redressal across Nepal.",
     images: [
       {
-        url: "/images/pcrn-logo.png",
+        url: "images/pcrn-logo.png",
         width: 256,
         height: 256,
         alt: "Patients Rights Concern Nepal Emblem",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     title: "Patients Rights Concern Nepal (PCRN)",
     description:
       "Defending dignity and empowering patients across Nepal. Independent health advocacy NGO.",
-    images: ["/images/pcrn-logo.png"],
+    images: ["images/pcrn-logo.png"],
   },
 };
 

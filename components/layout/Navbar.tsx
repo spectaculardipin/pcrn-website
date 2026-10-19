@@ -74,7 +74,7 @@ export default function Navbar() {
             >
               <div className="relative w-12 h-12 md:w-14 md:h-14 shrink-0 transition-transform duration-200 group-hover:scale-105">
                 <Image
-                  src="/images/pcrn-logo.png"
+                  src="images/pcrn-logo.png"
                   alt="Patients Rights Concern Nepal Logo"
                   fill
                   sizes="48px"

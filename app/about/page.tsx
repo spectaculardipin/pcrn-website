@@ -106,7 +106,7 @@ export default function AboutPage() {
             <div className="lg:col-span-5 space-y-4">
               <div className="relative rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800 aspect-4/3">
                 <Image
-                  src="/images/policy-advocacy.jpg"
+                  src="images/policy-advocacy.jpg"
                   alt="PCRN founding roundtable and policy dialogue in Kathmandu"
                   fill
                   className="object-cover"
