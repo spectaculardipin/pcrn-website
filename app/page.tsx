@@ -192,28 +192,89 @@ export default function HomePage() {
       </section>
 
       {/* 4. Latest Updates */}
-      <section className="py-10 bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 transition-colors duration-200">
+      <section className="py-16 bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 transition-colors duration-200">
         <Container>
-          <div className="text-center space-y-2">
+          <div className="text-center space-y-3 mb-8">
             <span className="text-xs font-bold uppercase tracking-wider text-[#9E1B28] dark:text-rose-400">
               Latest Updates
             </span>
-            <p className="text-sm text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-              <span className="font-medium">Latest:</span> PCRN registered Sep 2026 • 10% bed quota reminder • Patient Rights Handbook released
-            </p>
-            <div className="flex flex-wrap items-center justify-center gap-3 pt-2 text-xs">
-              <Link href="/about#registration" className="font-semibold text-[#9E1B28] dark:text-rose-400 hover:underline">
-                Registration details
+            <h3 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">
+              Recent Announcements & Resources
+            </h3>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {/* Update Card 1 */}
+            <Surface padding="md" className="flex flex-col h-full">
+              <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 mb-3">
+                <span className="px-2 py-0.5 rounded-full bg-rose-100 dark:bg-rose-900/40 text-[#9E1B28] dark:text-rose-400 font-medium">
+                  Official Notice
+                </span>
+                <span className="text-slate-400 dark:text-slate-600">•</span>
+                <time className="font-medium">September 2026</time>
+              </div>
+              <h4 className="text-sm font-bold text-slate-900 dark:text-white mb-2 leading-snug">
+                PCRN Officially Registered in Kathmandu
+              </h4>
+              <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-4 flex-1">
+                PCRN has received official registration with the District Administration Office Kathmandu (Reg. No. 1284/081/082) and affiliation with the Social Welfare Council to champion patient rights nationwide.
+              </p>
+              <Link
+                href="/about#registration"
+                className="text-xs font-semibold text-[#9E1B28] dark:text-rose-400 hover:underline inline-flex items-center gap-1 self-start"
+              >
+                <span>View documentation</span>
+                <ArrowRight className="w-3 h-3" />
               </Link>
-              <span aria-hidden="true">/</span>
-              <Link href="/know-your-rights/right-to-transparent-billing" className="font-semibold text-[#9E1B28] dark:text-rose-400 hover:underline">
-                10% quota guide
+            </Surface>
+
+            {/* Update Card 2 */}
+            <Surface padding="md" className="flex flex-col h-full">
+              <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 mb-3">
+                <span className="px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-400 font-medium">
+                  Public Advisory
+                </span>
+                <span className="text-slate-400 dark:text-slate-600">•</span>
+                <time className="font-medium">September 2026</time>
+              </div>
+              <h4 className="text-sm font-bold text-slate-900 dark:text-white mb-2 leading-snug">
+                10% Free Bed Quota Reminder
+              </h4>
+              <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-4 flex-1">
+                Under Health Institution Operation Standards 2077 and Public Health Service Act 2075, private hospitals must provide 10% of beds and core services free for indigent citizens.
+              </p>
+              <Link
+                href="/know-your-rights/right-to-transparent-billing"
+                className="text-xs font-semibold text-[#9E1B28] dark:text-rose-400 hover:underline inline-flex items-center gap-1 self-start"
+              >
+                <span>Access guide</span>
+                <ArrowRight className="w-3 h-3" />
               </Link>
-              <span aria-hidden="true">/</span>
-              <a href="/documents/PCRN-Patient-Rights-Guide-Nepal.pdf" download className="font-semibold text-[#9E1B28] dark:text-rose-400 hover:underline">
-                Download Patient Rights Handbook
+            </Surface>
+
+            {/* Update Card 3 */}
+            <Surface padding="md" className="flex flex-col h-full">
+              <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 mb-3">
+                <span className="px-2 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-400 font-medium">
+                  Resource Release
+                </span>
+                <span className="text-slate-400 dark:text-slate-600">•</span>
+                <time className="font-medium">September 2026</time>
+              </div>
+              <h4 className="text-sm font-bold text-slate-900 dark:text-white mb-2 leading-snug">
+                Patient Rights Handbook Released
+              </h4>
+              <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-4 flex-1">
+                Our legal advocacy wing has compiled key legal provisions from the Public Health Service Act 2075 into a concise 1-page reference guide for patients and hospital visitors.
+              </p>
+              <a
+                href="/documents/PCRN-Patient-Rights-Guide-Nepal.pdf"
+                download
+                className="text-xs font-semibold text-[#9E1B28] dark:text-rose-400 hover:underline inline-flex items-center gap-1 self-start"
+              >
+                <span>Download PDF</span>
+                <ArrowRight className="w-3 h-3" />
               </a>
-            </div>
+            </Surface>
           </div>
         </Container>
       </section>
@@ -232,9 +293,12 @@ export default function HomePage() {
               <Button href="/get-involved" variant="white" size="lg">
                 Join Our Cause
               </Button>
-              <Button href="/contact" variant="white" size="lg" className="bg-transparent text-white border-white hover:bg-white/10 dark:bg-transparent dark:text-white dark:border-white/80 dark:hover:bg-white/10">
+              <a
+                href="/contact"
+                className="inline-flex items-center justify-center px-6 py-3.5 text-base font-semibold rounded-md bg-transparent text-white border-2 border-white hover:bg-white/10 dark:hover:bg-white/10 transition-colors focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
+              >
                 Contact Our Secretariat
-              </Button>
+              </a>
             </div>
           </div>
         </Container>
