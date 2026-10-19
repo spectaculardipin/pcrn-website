@@ -21,14 +21,14 @@ export default function Hero() {
               <span>Constitutional Right to Health &ndash; Article 35 of Nepal Constitution</span>
             </div>
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-slate-100 tracking-tight leading-[1.15]">
-              Defending Dignity, Empowering Patients Across{" "}
-              <span className="text-[#9E1B28] dark:text-rose-500 relative inline-block">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-slate-100 tracking-tight leading-[1.2]">
+              Defending Dignity, Empowering Patients Across
+              <span className="text-[#9E1B28] dark:text-rose-500">
                 Nepal
               </span>
             </h1>
 
-            <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-base sm:text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
               Every citizen deserves compassionate healthcare, clear medical information, and complete transparency. 
               <strong> Patients Rights Concern Nepal (PCRN)</strong> is an independent non-governmental organization 
               championing informed consent, fair medical treatment, and institutional accountability throughout Nepal’s health system.

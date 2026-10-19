@@ -31,18 +31,20 @@ export default function Navbar() {
       {/* Top Humanitarian Info Bar */}
       <div className="bg-slate-900 dark:bg-black text-slate-200 text-xs py-1.5 border-b border-slate-800">
         <Container>
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-1 sm:gap-4">
-            <div className="flex items-center gap-2 text-slate-300">
-              <span className="inline-block w-2 h-2 rounded-full bg-[#9E1B28] dark:bg-rose-500 animate-pulse"></span>
-              <span className="font-medium text-slate-200">
-                Patients Rights Concern Nepal (PCRN)
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-4">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 text-slate-300">
+              <span className="inline-flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-[#9E1B28] dark:bg-rose-500 animate-pulse"></span>
+                <span className="font-medium text-slate-100 truncate sm:truncate">
+                  Patients Rights Concern Nepal (PCRN)
+                </span>
               </span>
-              <span className="hidden md:inline text-slate-400">
+              <span className="hidden sm:inline text-slate-400 whitespace-nowrap">
                 Registered Health Advocacy NGO (Kathmandu, Nepal)
               </span>
             </div>
 
-            <div className="flex items-center gap-4 text-xs">
+            <div className="flex flex-col sm:flex-row items-center gap-2 text-xs w-full sm:w-auto">
               <a
                 href="tel:+97714792100"
                 className="flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors"
@@ -51,8 +53,8 @@ export default function Navbar() {
                 <Phone className="w-3 h-3 text-[#E11D48]" />
                 <span className="font-semibold tracking-wide">Helpline: +977-1-4792100</span>
               </a>
-              <span className="hidden sm:inline" aria-hidden="true"></span>
-              <span className="text-slate-400 hidden sm:inline">
+              <span className="hidden sm:inline text-slate-500" aria-hidden="true">|</span>
+              <span className="text-slate-400 hidden sm:inline whitespace-nowrap">
                 Sun &ndash; Fri: 10:00 AM &ndash; 5:00 PM
               </span>
             </div>
