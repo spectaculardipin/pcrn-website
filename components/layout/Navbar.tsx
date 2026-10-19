@@ -31,8 +31,8 @@ export default function Navbar() {
       {/* Top Humanitarian Info Bar */}
       <div className="bg-slate-900 dark:bg-black text-slate-200 text-xs py-1.5 border-b border-slate-800">
         <Container>
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4">
-            <div className="w-full sm:w-auto flex flex-col sm:flex-row sm:items-center gap-1.5 text-slate-300">
+          <div className="flex flex-wrap items-center justify-between gap-2 sm:gap-4">
+            <div className="flex flex-wrap items-center gap-1.5 text-slate-300">
               <span className="inline-flex items-center gap-1.5">
                 <span className="w-2 h-2 rounded-full bg-[#9E1B28] dark:bg-rose-500 animate-pulse"></span>
                 <span className="font-medium text-slate-100 truncate sm:truncate">
@@ -44,7 +44,7 @@ export default function Navbar() {
               </span>
             </div>
 
-            <div className="w-full sm:w-auto flex flex-col sm:flex-row items-center gap-2 text-xs">
+            <div className="flex flex-wrap items-center gap-2 text-xs">
               <a
                 href="tel:+97714792100"
                 className="flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors"
