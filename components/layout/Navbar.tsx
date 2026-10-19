@@ -34,7 +34,7 @@ export default function Navbar() {
           <div className="flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-4">
             <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 text-slate-300">
               <span className="inline-flex items-center gap-1.5">
-                <span className="w-2 h-2 rounded-full bg-[#9E1B28] dark:bg-rose-500 animate-pulse"></span>
+                <span className="w-2 h-2 rounded-full bg-pcrn-red dark:bg-pcrn-red-dark animate-pulse"></span>
                 <span className="font-medium text-slate-100 truncate sm:truncate">
                   Patients Rights Concern Nepal (PCRN)
                 </span>
@@ -50,7 +50,7 @@ export default function Navbar() {
                 className="flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors"
                 title="Call PCRN Patient Helpline"
               >
-                <Phone className="w-3 h-3 text-[#E11D48]" />
+                <Phone className="w-3 h-3 text-pcrn-red-dark" />
                 <span className="font-semibold tracking-wide">Helpline: +977-1-4792100</span>
               </a>
               <span className="hidden sm:inline text-slate-500" aria-hidden="true">|</span>
@@ -83,7 +83,7 @@ export default function Navbar() {
                 />
               </div>
               <div className="flex flex-col">
-                <span className="text-base sm:text-lg md:text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100 group-hover:text-[#9E1B28] dark:group-hover:text-rose-400 transition-colors leading-tight">
+                <span className="text-base sm:text-lg md:text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100 group-hover:text-pcrn-red dark:group-hover:text-pcrn-red-dark transition-colors leading-tight">
                   PCRN
                   <span className="text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-300 block md:inline md:ml-1.5 md:before:content-['—'] md:before:mr-1.5">
                     Patients Rights Concern Nepal
@@ -105,13 +105,13 @@ export default function Navbar() {
                     href={link.href}
                     className={`px-3 py-2 text-sm font-medium rounded-md transition-colors relative ${
                       active
-                        ? "text-[#9E1B28] dark:text-rose-400 font-semibold bg-rose-50/70 dark:bg-rose-950/40"
-                        : "text-slate-700 dark:text-slate-300 hover:text-[#9E1B28] dark:hover:text-rose-400 hover:bg-slate-50 dark:hover:bg-slate-900"
+                        ? "text-pcrn-red dark:text-pcrn-red-dark font-semibold bg-rose-50/70 dark:bg-rose-950/40"
+                        : "text-slate-700 dark:text-slate-300 hover:text-pcrn-red dark:hover:text-pcrn-red-dark hover:bg-slate-50 dark:hover:bg-slate-900"
                     }`}
                   >
                     {link.name}
                     {active && (
-                      <span className="absolute bottom-0 left-3 right-3 h-0.5 bg-[#9E1B28] dark:bg-rose-500 rounded-full" />
+                      <span className="absolute bottom-0 left-3 right-3 h-0.5 bg-pcrn-red dark:bg-pcrn-red-dark rounded-full" />
                     )}
                   </Link>
                 );
@@ -124,7 +124,7 @@ export default function Navbar() {
 
               <Link
                 href="/get-involved#donate"
-                className="inline-flex items-center gap-1.5 text-xs font-semibold px-3.5 py-2 rounded-md bg-[#9E1B28] text-white hover:bg-[#7F121D] shadow-xs transition-colors"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold px-3.5 py-2 rounded-md bg-pcrn-red text-white hover:bg-pcrn-red-dark shadow-xs transition-colors"
               >
                 <Heart className="w-3.5 h-3.5 fill-white" />
                 <span>Donate</span>
@@ -134,16 +134,17 @@ export default function Navbar() {
             {/* Mobile Menu & Toggle */}
             <div className="flex lg:hidden items-center gap-1.5 sm:gap-2">
               <ThemeToggle className="p-3" />
+
               <Link
                 href="/get-involved#donate"
-                className="inline-flex items-center gap-1 text-xs font-semibold px-4 py-3 rounded-md bg-[#9E1B28] text-white hover:bg-[#7F121D]"
+                className="inline-flex items-center gap-1 text-xs font-semibold px-4 py-3 rounded-md bg-pcrn-red text-white hover:bg-pcrn-red-dark"
               >
                 <Heart className="w-3.5 h-3.5 fill-white" />
                 <span>Donate</span>
               </Link>
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="p-3 text-slate-700 dark:text-slate-300 hover:text-[#9E1B28] dark:hover:text-rose-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md focus:outline-hidden focus:ring-2 focus:ring-[#9E1B28]"
+                className="p-3 text-slate-700 dark:text-slate-300 hover:text-pcrn-red dark:hover:text-pcrn-red-dark hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md focus:outline-hidden focus:ring-2 focus:ring-pcrn-red"
                 aria-label="Toggle Navigation Menu"
                 aria-expanded={isOpen}
               >
@@ -168,8 +169,8 @@ export default function Navbar() {
                     onClick={() => setIsOpen(false)}
                     className={`flex items-center justify-between px-3 py-2.5 rounded-md text-sm font-medium transition-colors ${
                       active
-                        ? "bg-rose-50 dark:bg-rose-950/40 text-[#9E1B28] dark:text-rose-400 font-semibold"
-                        : "text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-900 hover:text-[#9E1B28] dark:hover:text-rose-400"
+                        ? "bg-rose-50 dark:bg-rose-950/40 text-pcrn-red dark:text-pcrn-red-dark font-semibold"
+                        : "text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-900 hover:text-pcrn-red dark:hover:text-pcrn-red-dark"
                     }`}
                   >
                     <span>{link.name}</span>
@@ -184,13 +185,13 @@ export default function Navbar() {
                   onClick={() => setIsOpen(false)}
                   className="flex items-center justify-center gap-1.5 py-2.5 px-3 text-xs font-medium rounded-md border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-900 text-center"
                 >
-                  <Shield className="w-3.5 h-3.5 text-[#9E1B28] dark:text-rose-400" />
+                  <Shield className="w-3.5 h-3.5 text-pcrn-red dark:text-pcrn-red-dark" />
                   <span>Join Our Cause</span>
                 </Link>
                 <Link
                   href="/get-involved#donate"
                   onClick={() => setIsOpen(false)}
-                  className="flex items-center justify-center gap-1.5 py-2.5 px-3 text-xs font-semibold rounded-md bg-[#9E1B28] text-white hover:bg-[#7F121D] text-center"
+                  className="flex items-center justify-center gap-1.5 py-2.5 px-3 text-xs font-semibold rounded-md bg-pcrn-red text-white hover:bg-pcrn-red-dark text-center"
                 >
                   <Heart className="w-3.5 h-3.5 fill-white" />
                   <span>Donate Support</span>

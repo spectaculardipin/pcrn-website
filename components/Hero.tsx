@@ -16,19 +16,19 @@ export default function Hero() {
           {/* Text Content Column */}
           <div className="lg:col-span-7 space-y-6">
             {/* Humanitarian Badge */}
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-rose-50 dark:bg-rose-950/60 border border-rose-200 dark:border-rose-900 text-xs font-semibold text-[#9E1B28] dark:text-rose-400">
-              <span className="w-2 h-2 rounded-full bg-[#9E1B28] dark:bg-rose-500"></span>
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-rose-50 dark:bg-rose-950/60 border border-rose-200 dark:border-rose-900 text-xs font-semibold text-pcrn-red dark:text-pcrn-red-dark">
+              <span className="w-2 h-2 rounded-full bg-pcrn-red dark:bg-pcrn-red-dark"></span>
               <span>Constitutional Right to Health &ndash; Article 35 of Nepal Constitution</span>
             </div>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-slate-100 tracking-tight leading-[1.2]">
-              Defending Dignity, Empowering Patients Across
-              <span className="text-[#9E1B28] dark:text-rose-500">
+              Defending Dignity, Empowering Patients Across{" "}
+              <span className="text-pcrn-red dark:text-pcrn-red-dark">
                 Nepal
               </span>
             </h1>
 
-            <p className="text-base sm:text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
+            <p className="text-base sm:text-lg text-slate-700 dark:text-slate-300 leading-relaxed text-slate-700 dark:text-slate-300">
               Every citizen deserves compassionate healthcare, clear medical information, and complete transparency. 
               <strong> Patients Rights Concern Nepal (PCRN)</strong> is an independent non-governmental organization 
               championing informed consent, fair medical treatment, and institutional accountability throughout Nepal’s health system.
@@ -37,19 +37,19 @@ export default function Hero() {
             {/* Value Highlights */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
               <div className="flex items-center gap-2.5 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
-                <CheckCircle className="w-4 h-4 text-[#9E1B28] dark:text-rose-500 shrink-0" />
+                <CheckCircle className="w-4 h-4 text-pcrn-red dark:text-pcrn-red-dark shrink-0" />
                 <span>Zero tolerance for emergency denial</span>
               </div>
               <div className="flex items-center gap-2.5 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
-                <CheckCircle className="w-4 h-4 text-[#9E1B28] dark:text-rose-500 shrink-0" />
+                <CheckCircle className="w-4 h-4 text-pcrn-red dark:text-pcrn-red-dark shrink-0" />
                 <span>Transparent & itemized hospital billing</span>
               </div>
               <div className="flex items-center gap-2.5 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
-                <CheckCircle className="w-4 h-4 text-[#9E1B28] dark:text-rose-500 shrink-0" />
+                <CheckCircle className="w-4 h-4 text-pcrn-red dark:text-pcrn-red-dark shrink-0" />
                 <span>Legally backed informed consent</span>
               </div>
               <div className="flex items-center gap-2.5 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
-                <CheckCircle className="w-4 h-4 text-[#9E1B28] dark:text-rose-500 shrink-0" />
+                <CheckCircle className="w-4 h-4 text-pcrn-red dark:text-pcrn-red-dark shrink-0" />
                 <span>Guidance on medical dispute redressal</span>
               </div>
             </div>
@@ -67,9 +67,9 @@ export default function Hero() {
             {/* Helpline quick strip */}
             <div className="pt-4 border-t border-slate-200/80 dark:border-slate-800 flex flex-wrap items-center gap-4 text-xs text-slate-500 dark:text-slate-400">
               <div className="flex items-center gap-2 text-slate-800 dark:text-slate-200 font-medium">
-                <PhoneCall className="w-4 h-4 text-[#9E1B28] dark:text-rose-400" />
+                <PhoneCall className="w-4 h-4 text-pcrn-red dark:text-pcrn-red-dark" />
                 <span>Patient Guidance Helpline:</span>
-                <a href="tel:+97714792100" className="text-[#9E1B28] dark:text-rose-400 font-bold hover:underline">
+                <a href="tel:+97714792100" className="text-pcrn-red dark:text-pcrn-red-dark font-bold hover:underline">
                   +977-1-4792100
                 </a>
               </div>
@@ -100,7 +100,7 @@ export default function Hero() {
                 <div className="flex items-center justify-between gap-3">
                   <div className="flex items-center gap-2.5">
                     <div className="w-9 h-9 rounded-lg bg-rose-50 dark:bg-rose-950/70 border border-rose-200 dark:border-rose-900/80 flex items-center justify-center shrink-0">
-                      <ShieldCheck className="w-5 h-5 text-[#9E1B28] dark:text-rose-400" />
+                      <ShieldCheck className="w-5 h-5 text-pcrn-red dark:text-pcrn-red-dark" />
                     </div>
                     <div>
                       <p className="text-xs font-bold text-slate-900 dark:text-slate-100 leading-tight">
@@ -113,7 +113,7 @@ export default function Hero() {
                   </div>
                   <Link
                     href="/know-your-rights"
-                    className="text-xs font-semibold text-[#9E1B28] dark:text-rose-400 hover:text-[#7F121D] flex items-center gap-1 shrink-0"
+                    className="text-xs font-semibold text-pcrn-red dark:text-pcrn-red-dark hover:text-pcrn-red-dark flex items-center gap-1 shrink-0"
                   >
                     <span>Read charter</span>
                     <ArrowRight className="w-3 h-3" />
